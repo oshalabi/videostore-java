@@ -1,3 +1,4 @@
+package domain;
 
 import java.util.Vector;
 import java.util.Enumeration;
@@ -24,7 +25,7 @@ public class Customer
 		
 		while (rentals.hasMoreElements ()) {
 			double 		thisAmount = 0;
-			Rental 		each = (Rental)rentals.nextElement ();
+			Rental each = (Rental)rentals.nextElement ();
 			
 			// determines the amount for each line
 			switch (each.getMovie ().getPriceCode ()) {
